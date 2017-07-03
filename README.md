@@ -15,6 +15,7 @@
     - `SmoothType.smoothstep`
     - `SmoothType.smootherstep`
     - `SmoothType.exponential`
+    - `SmoothType.easeIn`
     - `SmoothType.easeOut`
     - `SmoothType.none` — no smoothing applied
 

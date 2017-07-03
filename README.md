@@ -53,6 +53,7 @@ Now it's easy to switch between smoothing modes in the Inspector window:
 
 ## // TODO:
 
+- Profile performance to compare with `Mathf.SmoothStep` ([thanks Stella](https://twitter.com/computerpupper/status/881952351829061632))
 - add additional smoothing equations
 - options to incorporate perlin noise to the returned value
 - add additional float operations(?)

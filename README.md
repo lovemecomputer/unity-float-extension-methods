@@ -1,14 +1,14 @@
-# Float extension methods for Unity 3D
+# Float extension methods for Unity 3D 🎛
 
-Easy implementation of common float operations
+🎚 Easy implementation of common float operations 🎚
 
-## ExtensionMethods_Float.cs
+## ❏ ExtensionMethods_Float.cs
 
 #### Includes:
 
-- `Smooth0to1` function.
+- `Smooth0to1` function 〰️〰️〰️
   - call this method on a float in the range of 0–1, and it will return a value blended by the chosen `SmoothType`
-
+  
 
 - `SmoothType` enum - used to select which `SmoothType` to use when calling the `Smooth0to1` function.
   - **Included smoothing equations:**

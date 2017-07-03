@@ -7,7 +7,7 @@ Easy implementation of common float operations
 #### Includes:
 
 - `Smooth0to1` function.
-  - pass this function a float in the range of 0–1, and it will return a value blended by the chosen `SmoothType`
+  - call this method on a float in the range of 0–1, and it will return a value blended by the chosen `SmoothType`
 
 
 - `SmoothType` enum - used to select which `SmoothType` to use when calling the `Smooth0to1` function.
@@ -43,7 +43,7 @@ Pass the variable as the argument for `SmoothType()`.
 currentPercentage = (currentLerpTime/lerpDuration).Smooth0to1(smoothType);
 ```
 
-Now it's easy to swith between smoothing modes in the Inspector window:
+Now it's easy to switch between smoothing modes in the Inspector window:
 
 ![example of SmoothType dropdown in Inspector window](images/smooth-type-dropdown-example.png)
 
@@ -54,4 +54,6 @@ Now it's easy to swith between smoothing modes in the Inspector window:
 
 - add additional smoothing equations
 - options to incorporate perlin noise to the returned value
-- add additional useful float operations
+- add additional float operations(?)
+
+Feel free to add an issue, pull request, or ping me on twitter at [@animalphase](https://twitter.com/animalphase)!

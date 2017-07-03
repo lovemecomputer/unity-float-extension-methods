@@ -1,6 +1,6 @@
 # Float extension methods for Unity 3D
 
-Simple operations for common float operations
+Easy implementation of common float operations
 
 ## ExtensionMethods_Float.cs
 
@@ -17,6 +17,37 @@ Simple operations for common float operations
     - `SmoothType.exponential`
     - `SmoothType.easeOut`
     - `SmoothType.none` — no smoothing applied
+
+
+### Example Usage
+
+```
+currentPercentage = (currentLerpTime/lerpDuration).Smooth0to1(SmoothType.smootherstep);
+```
+
+In this example, `currentLerpTime` is adjusted over time, in your component's relevant logic. `currentLerpTime` is assumed to be the linear/unsmoothed value.
+
+`.Smooth0to1` is then called on this float value, with an argument declaring which `SmoothType` to use. It returns a float value, smoothed with the chosen `SmoothType`, and does not mutate the original value.
+
+---
+
+** Exposing `SmoothType` as an option in the Inspector: **
+
+Declare a public variable:
+```
+public SmoothType smoothType = SmoothType.smootherstep;
+```
+Pass the variable as the argument for `SmoothType()`.
+
+```
+currentPercentage = (currentLerpTime/lerpDuration).Smooth0to1(smoothType);
+```
+
+Now it's easy to swith between smoothing modes in the Inspector window:
+
+![example of SmoothType dropdown in Inspector window](images/smooth-type-dropdown-example.png)
+
+---
 
 
 ## // TODO:

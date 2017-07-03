@@ -56,4 +56,4 @@ Now it's easy to switch between smoothing modes in the Inspector window:
 - options to incorporate perlin noise to the returned value
 - add additional float operations(?)
 
-Feel free to add an issue, pull request, or ping me on twitter at [@animalphase](https://twitter.com/animalphase)!
+Feel free to add an issue, pull request, or reach me on twitter at [@animalphase](https://twitter.com/animalphase)!

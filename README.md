@@ -8,7 +8,7 @@
 
 - `Smooth0to1` function 〰️〰️〰️
   - call this method on a float in the range of 0–1, and it will return a value blended by the chosen `SmoothType`
-  
+
 
 - `SmoothType` enum - used to select which `SmoothType` to use when calling the `Smooth0to1` function.
   - **Included smoothing equations:**
@@ -31,7 +31,7 @@ In this example, `currentLerpTime` is adjusted over time, in your component's re
 
 ---
 
-** Exposing `SmoothType` as an option in the Inspector: **
+#### Exposing `SmoothType` as an option in the Inspector:
 
 Declare a public variable:
 ```

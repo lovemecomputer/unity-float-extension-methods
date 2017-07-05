@@ -2,6 +2,8 @@
 
 🎚 Easy implementation of common float operations 🎚
 
+<br>
+
 ## ❏ `ExtensionMethods_Float.cs`
 
 #### Includes:
@@ -11,7 +13,7 @@
 
 
 - `SmoothType` enum - used to select which `SmoothType` to use when calling the `Smooth0to1` function.
-  - **Included smoothing equations:**
+  - Included smoothing equations:
     - `SmoothType.smoothstep`
     - `SmoothType.smootherstep`
     - `SmoothType.exponential`
@@ -21,8 +23,9 @@
     
 - `RemapToNumberRange` — call this method on a float to remap it from one range to another.
 
+<br><br>
 
-### Example Usage — `Smooth0to1`
+## Example Usage — `Smooth0to1`
 
 ```
 currentPercentage = (currentLerpTime/lerpDuration).Smooth0to1(SmoothType.smootherstep);
@@ -32,7 +35,7 @@ In this example, `currentLerpTime` is adjusted over time, in your component's re
 
 `.Smooth0to1` is then called on this float value, with an argument declaring which `SmoothType` to use. It returns a float value, smoothed with the chosen `SmoothType`, and does not mutate the original value.
 
----
+<br>
 
 #### Exposing `SmoothType` as an option in the Inspector:
 
@@ -50,8 +53,7 @@ Now it's easy to switch between smoothing modes in the Inspector window:
 
 ![example of SmoothType dropdown in Inspector window](images/smooth-type-dropdown-example.png)
 
----
-
+<br><br>
 
 ## // TODO:
 

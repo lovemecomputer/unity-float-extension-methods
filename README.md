@@ -18,6 +18,8 @@
     - `SmoothType.easeIn`
     - `SmoothType.easeOut`
     - `SmoothType.none` — no smoothing applied
+    
+- `RemapToNumberRange` — call this method on a float to remap it from one range to another.
 
 
 ### Example Usage

@@ -22,7 +22,7 @@
 - `RemapToNumberRange` — call this method on a float to remap it from one range to another.
 
 
-### Example Usage
+### Example Usage — `Smooth0to1`
 
 ```
 currentPercentage = (currentLerpTime/lerpDuration).Smooth0to1(SmoothType.smootherstep);
